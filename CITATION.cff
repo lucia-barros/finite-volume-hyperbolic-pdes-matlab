@@ -1,0 +1,9 @@
+cff-version: 1.2.0
+message: "If you use or discuss this educational repository, please cite it by title and author."
+title: "Finite-Volume Methods for Hyperbolic PDEs in MATLAB"
+type: software
+authors:
+  - family-names: "Gómez Barros"
+    given-names: "Lucía"
+version: 1.0.0
+date-released: 2026-09-16
