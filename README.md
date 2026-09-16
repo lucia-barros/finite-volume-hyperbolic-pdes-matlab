@@ -60,25 +60,30 @@ High-order finite-volume methods
 
 The main problems in this repository can be written as hyperbolic conservation laws of the form
 
-$$
+```math
 \frac{\partial \mathbf{U}}{\partial t}
-+ \frac{\partial \mathbf{F}(\mathbf{U})}{\partial x}=0,
-$$
++
+\frac{\partial \mathbf{F}(\mathbf{U})}{\partial x}
+=
+0,
 
 where $\mathbf{U}$ is the vector of conserved variables and $\mathbf{F}(\mathbf{U})$ is the physical flux.
 
 The finite-volume update used throughout the project has the generic form
 
-$$
+````markdown
+```math
 \mathbf{U}_i^{n+1}
 =
 \mathbf{U}_i^n
 -
 \frac{\Delta t}{\Delta x}
 \left(
-\mathbf{F}_{i+1/2}-\mathbf{F}_{i-1/2}
+\mathbf{F}_{i+1/2}
+-
+\mathbf{F}_{i-1/2}
 \right).
-$$
+```
 
 The numerical work therefore revolves around one central question: **how should the interface fluxes be constructed so that the method remains conservative, stable, accurate, and physically meaningful?**
 
