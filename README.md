@@ -65,13 +65,13 @@ The main problems in this repository can be written as hyperbolic conservation l
 +
 \frac{\partial \mathbf{F}(\mathbf{U})}{\partial x}
 =
-0,
+0.
+```
 
-where $\mathbf{U}$ is the vector of conserved variables and $\mathbf{F}(\mathbf{U})$ is the physical flux.
+Here, **U** denotes the vector of conserved variables, while **F(U)** represents the corresponding physical flux.
 
 The finite-volume update used throughout the project has the generic form
 
-````markdown
 ```math
 \mathbf{U}_i^{n+1}
 =
